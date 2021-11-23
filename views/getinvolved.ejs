@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <p>Get Involved</p>
+    </div>
+    <ul>
+      <li><a href="">home</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">news</a></li>
+      <li><a href="">donate</a></li>
+      <a href="/">Sign Out</a>
+    </ul>
+  </nav>
+  <div id="map"></div>
+  <p class="map-text">Volunteering play a crucial role in growing and creating local impact. By volunteering,
+    fundraising
+    and
+    researching, we can work together to promote food security in our neighborhoods and distribut surplus food in the
+    community!</p>
+  <br>
+  <span class="map-content">Start your journey and be a part of the Village</span>
+  <br><br>
+  <div class="map-input">
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <input type="text" placeholder="Email Address">
+    <button class="harmonizer-btn">Sign Up</button>
+    <br>
+    <label for="check">
+      <div class="input-container">
+        <input type="checkbox" class="checkbox" id="check">
+        <span class="checkbox-text">I'm not a robot</span>
+      </div>
+    </label>
+    <div class="custom-select">
+      <select>
+        <option value="0">Select:</option>
+        <option value="1">Harmony Community Fridge: Roxbourough Location</option>
+        <option value="2">Harmony Community Fridge: West Mount Airy Location</option>
+        <option value="3">Harmony Community Fridge: East Mount Airy</option>
+      </select>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyv1swyOfhYnLpzZPVgn6j85FKQcrY85A&callback=initMap">
+    </script>
+</body>
+
+</html>

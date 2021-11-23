@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Harmony</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4e7f0c2d65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <p>harmony</p>
+    </div>
+    <ul>
+      <li><a href="">home</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">get involved</a></li>
+      <li><a href="">news</a></li>
+      <li><a href="">donate</a></li>
+      <a href="/logout" class="btn btn-default btn-sm">Sign Out</a>
+    </ul>
+  </nav>
+  <div class="vid-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k0msIib3WVU?rel=0&autoplay=1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="village-container">
+    <img src="/img/villageone.jpeg" alt="villageimageone">
+    <div class="village-text">
+      <img src="/img/villageimg.jpeg" alt="villageimage">
+      <p class="one">Roughly one in five people suffer from food insecurity in Philadelphia - a statistic that amounts
+        to some
+        300,000 of us who lack regular, reliable access to daily meals. Alarmingly, that number has climbed upwards over
+        the past two years due to COVID-19.</p>
+      <p class="two">Considering that nearly half of U.S. residents live paycheck to paycheck, food is often the first
+        necessity to be
+        jeopardized. More than 10 million children live in food insecure households, and many families are often
+        ineligible for
+        financial support.</p>
+    </div>
+    <div class="village-closing">
+      <span>So what does helping ease hunger in our city look like on an individual level? Check out our get involved
+        section to see all
+        kinds of
+        ways you play a role in helping make sure that Philadelphians who need food can get it right now.</span>
+      <br><br>
+      <a href="/getinvolved.ejs">Get Involved</a>
+      <!-- <button id="redirect">Get Involved</button> -->
+    </div>
+    <div class="mission">
+      <h2>What we do:</h2>
+      <p>Harmony would like to partner with grocery stores, restaurants, WaWa and lastly the community to donate food to
+        the designated hot spots the community fridges and pantry's are located.</p>
+    </div>
+    <div class="donate">
+      <img src="/img/donate.jpeg" alt="donationimage">
+      <p>Help us address the reality that 161 billion pounds of food is wasted every year, while over 50 million
+        Americans
+        continue to face food insecurity. A donation of $100 can feed a family of four for two months.</p>
+      <br><br>
+      <button>DONATE</button>
+    </div>
+    <div class="fubu">
+      <img src="/img/fubu.jpeg" alt="fubuimage">
+      <p>What makes Harmony special, is the fact that this is run by a passionate, dedicated black woman fighting
+        food insecurity locally with goals to spread nationally.
+      </p>
+      <!-- <img class="founder" src="/img/founder.jpeg" alt=""> -->
+    </div>
+    <div class="ideas">
+      <img src="/img/ideas.jpeg" alt="">
+      <p>Here at Harmony we want to include the community, our VILLAGE to have a voice on how to
+        help spread more awareness and fight food insecurity in our communities!</p>
+      <br>
+      <div class="harmony-ideas-container">
+        <h2>Please share your ideas!</h2>
+        <div class="form">
+          <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-idea" placeholder="ideas">
+            <input type="submit" value="Add" class="btn btn-primary">
+          </form>
+          <p id="counter"></p>
+          <table>
+            <tr class="ideas">
+              <th>
+                <h3>Ideas:</h3>
+              </th>
+            </tr>
+            <tbody id="ideas">
+            </tbody>
+          </table>
+        </div>
+        <div id="edit-box" role="aria-hidden">
+          <form action="javascript:void(0);" method="POST" id="save-edit">
+            <input type="text" id="edit-idea">
+            <input type="submit" value="Save" class="btn btn-success">
+            <a onclick="CloseInput()" aria-hidden="Close">&#10006;</a>
+          </form>
+          <!-- <form class="form">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" value=""><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="fname" name="fname" value=""><br>
+          <label for="email">Email:
+          </label>
+          <input type="text" id="fname" name="fname" value=""><br>
+          <br>
+          <button class="form-btn">Join The Village</button>
+        </form> -->
+        </div>
+        <div class="harmonizer">
+          <h3>Become a Harmonizer</h3>
+          <span>Sign up with your email address and receive updates, community meet ups and more!</span>
+          <br><br>
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+          <input type="text" placeholder="Email Address">
+          <button class="harmonizer-btn">Sign Up</button>
+          <br>
+          <label for="check">
+            <div class="input-container">
+              <input type="checkbox" class="checkbox" id="check">
+              <span class="checkbox-text">I'm not a robot</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+
+</html>
